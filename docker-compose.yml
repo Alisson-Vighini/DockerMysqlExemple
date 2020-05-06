@@ -6,8 +6,8 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: 'db'
-      MYSQL_ROOT_PASSWORD: 'basis'
+      MYSQL_ROOT_PASSWORD: 'senha'
     ports:
       - '3306:3306'
     volumes:
-      - ./scriptsdb:/docker-entrypoint-initdb.d 
+      - ./scriptsdb:/docker-entrypoint-initdb.d
